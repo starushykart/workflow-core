@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using Microsoft.Azure.Cosmos;
 using WorkflowCore.Providers.Azure.Interface;
 
@@ -12,7 +13,19 @@ namespace WorkflowCore.Providers.Azure.Services
 
         public CosmosClientFactory(string connectionString)
         {
-            _client = new CosmosClient(connectionString);
+            _client = new CosmosClient(connectionString, new CosmosClientOptions
+            {
+                HttpClientFactory = () =>
+                {
+                    var httpMessageHandler = new HttpClientHandler
+                    {
+                        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+                    };
+
+                    return new HttpClient(httpMessageHandler);
+                },
+                ConnectionMode = ConnectionMode.Gateway
+            });
         }
 
         public CosmosClient GetCosmosClient()

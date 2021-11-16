@@ -121,26 +121,7 @@ namespace Docker.Testify
 
         private int GetFreePort()
         {
-            lock (UsedPorts)
-            {
-                const int startRange = 10002;
-                const int endRange = 15000;
-                var ipGlobalProperties = IPGlobalProperties.GetIPGlobalProperties();
-                var tcpPorts = ipGlobalProperties.GetActiveTcpListeners();
-                var udpPorts = ipGlobalProperties.GetActiveUdpListeners();
-
-                var result = startRange;
-
-                while (((tcpPorts.Any(x => x.Port == result)) || (udpPorts.Any(x => x.Port == result))) && result <= endRange && !UsedPorts.Contains(result))
-                    result++;
-
-                if (result > endRange)
-                    throw new PortsInUseException();
-                
-                UsedPorts.Add(result);
-
-                return result;
-            }
+            return 8081;
 	    }
     }
 }
