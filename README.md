@@ -14,7 +14,7 @@ you can derive 'reference' from these entities and later find the matching workf
 
 **Example:**
 ```xml
-<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL.Idempotent" Version="3.9.0" />
+<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL.Idempotent" Version="3.9.0.1" />
 ```
 
 ```cs
