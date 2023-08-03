@@ -26,9 +26,17 @@ jobs:
       run: dotnet test test/WorkflowCore.IntegrationTests --configuration Release --no-build --verbosity normal -p:ParallelizeTestCollections=false
     - name: PostgreSQL Tests
       run: dotnet test test/WorkflowCore.Tests.PostgreSQL --configuration Release --no-build --verbosity normal -p:ParallelizeTestCollections=false
-    - name: Pack
+    - name: Pack WorkflowCore
+      run: dotnet pack src/WorkflowCore --configuration Release --no-build
+    - name: Pack WorkflowCore.DSL
+      run: dotnet pack src/WorkflowCore.DSL --configuration Release --no-build
+    - name: Pack WorkflowCore.Testing
+      run: dotnet pack src/WorkflowCore.Testing --configuration Release --no-build
+    - name: Pack EntityFramework
       run: dotnet pack src/providers/WorkflowCore.Persistence.EntityFramework --configuration Release --no-build
-    - name: Pack
+    - name: Pack PostgreSQL
       run: dotnet pack src/providers/WorkflowCore.Persistence.PostgreSQL --configuration Release --no-build
+    - name: Pack Redis
+      run: dotnet pack src/providers/WorkflowCore.Providers.Redis --configuration Release --no-build
     - name: Publish
       run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}

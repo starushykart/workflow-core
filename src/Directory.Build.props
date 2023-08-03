@@ -1,13 +1,14 @@
 <Project>
   <PropertyGroup>
+    <Authors>DanielGerlag,sergiikram</Authors>
     <PackageProjectUrl>https://github.com/SergiiKram/workflow-core</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/SergiiKram/workflow-core/blob/idempotent-workflow-start/LICENSE.md</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/SergiiKram/workflow-core</RepositoryUrl>
-    <Version>3.9.0.1</Version>
-    <AssemblyVersion>3.9.0.1</AssemblyVersion>
-    <FileVersion>3.9.0.1</FileVersion>
+    <Version>3.9.0.2</Version>
+    <AssemblyVersion>3.9.0.2</AssemblyVersion>
+    <FileVersion>3.9.0.2</FileVersion>
     <PackageIconUrl>https://github.com/SergiiKram/workflow-core/raw/idempotent-workflow-start/src/logo.png</PackageIconUrl>
-    <PackageVersion>3.9.0.1</PackageVersion>
+    <PackageVersion>3.9.0.2</PackageVersion>
   </PropertyGroup>
 </Project>

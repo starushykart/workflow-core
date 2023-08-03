@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>SergiiKram.WorkflowCore.Providers.Redis</PackageId>
     <PackageLicenseUrl>https://github.com/danielgerlag/workflow-core/blob/master/LICENSE.md</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/danielgerlag/workflow-core.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
