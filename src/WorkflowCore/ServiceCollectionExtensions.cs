@@ -7,6 +7,7 @@ using Microsoft.Extensions.ObjectPool;
 using WorkflowCore.Primitives;
 using WorkflowCore.Services.BackgroundTasks;
 using WorkflowCore.Services.ErrorHandlers;
+using WorkflowCore.Tracing;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -100,7 +101,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 factory == null
                     ? services.AddTransient<IWorkflowStepMiddleware, TMiddleware>()
                     : services.AddTransient<IWorkflowStepMiddleware, TMiddleware>(factory);
-
+        
         /// <summary>
         /// Adds a middleware that will run either before a workflow is kicked off or after
         /// a workflow completes. Specify the phase of the workflow execution process that
@@ -118,6 +119,14 @@ namespace Microsoft.Extensions.DependencyInjection
                 factory == null
                     ? services.AddTransient<IWorkflowMiddleware, TMiddleware>()
                     : services.AddTransient<IWorkflowMiddleware, TMiddleware>(factory);
+
+        /// <summary>
+        /// Add <see cref="StepTracingMiddleware"/> to setup step tracing
+        /// </summary>
+        /// <param name="services">The services collection.</param>
+        /// <returns>The services collection for chaining.</returns>
+        public static IServiceCollection AddWorkflowStepTracingMiddleware(this IServiceCollection services) 
+            => services.AddWorkflowStepMiddleware<StepTracingMiddleware>();
     }
 }
 
