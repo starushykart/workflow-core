@@ -4,7 +4,7 @@
 [![CodeQL](https://github.com/SergiiKram/workflow-core/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/SergiiKram/workflow-core/actions/workflows/codeql-analysis.yml)
 [![Publish Nuget](https://github.com/SergiiKram/workflow-core/actions/workflows/nuget.yml/badge.svg)](https://github.com/SergiiKram/workflow-core/actions/workflows/nuget.yml)
 
-This is a fork of the https://github.com/danielgerlag/workflow-core with idempotent workflow instance creation.
+**This is a fork of the https://github.com/danielgerlag/workflow-core with idempotent workflow instance creation.**
 
 The `Reference` field is used as an idempotency key.
 
@@ -12,9 +12,11 @@ So now you can safely retry workflow creation and have an exactly-once guarantee
 Also, in scenarios where you create a workflow to process document, user, external event, etc.,
 you can derive 'reference' from these entities and later find the matching workflow if you failed to persist the returned workflow id the first time.
 
+Additional changes include `EventsPurger` to delete old events from the database and improved OpenTelemetry tracebility, i.e. linking steps to the parent.
+
 **Example:**
 ```xml
-<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL.Idempotent" Version="3.9.0.2" />
+<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL.Idempotent" Version="3.9.0.3" />
 ```
 
 ```cs
