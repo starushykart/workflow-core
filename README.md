@@ -12,11 +12,14 @@ So now you can safely retry workflow creation and have an exactly-once guarantee
 Also, in scenarios where you create a workflow to process document, user, external event, etc.,
 you can derive 'reference' from these entities and later find the matching workflow if you failed to persist the returned workflow id the first time.
 
-Additional changes include `EventsPurger` to delete old events from the database and improved OpenTelemetry tracebility, i.e. linking steps to the parent.
+Additional changes include:
+- `EventsPurger` to delete old events from the database
+- improved OpenTelemetry tracebility, i.e. linking steps to the parent
+- sequential GUIDs (NewId library) for entities for better database performance
 
 **Example:**
 ```xml
-<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL.Idempotent" Version="3.9.0.3" />
+<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL" Version="3.9.0.4" />
 ```
 
 ```cs
