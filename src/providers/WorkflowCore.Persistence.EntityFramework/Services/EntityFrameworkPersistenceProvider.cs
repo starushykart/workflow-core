@@ -7,6 +7,7 @@ using WorkflowCore.Persistence.EntityFramework.Models;
 using WorkflowCore.Models;
 using WorkflowCore.Persistence.EntityFramework.Interfaces;
 using System.Threading;
+using MassTransit;
 
 namespace WorkflowCore.Persistence.EntityFramework.Services
 {
@@ -29,7 +30,7 @@ namespace WorkflowCore.Persistence.EntityFramework.Services
         {
             using (var db = ConstructDbContext())
             {
-                subscription.Id = Guid.NewGuid().ToString();
+                subscription.Id = NewId.NextGuid().ToString();
                 var persistable = subscription.ToPersistable();
                 var result = db.Set<PersistedSubscription>().Add(persistable);
                 await db.SaveChangesAsync(cancellationToken);
@@ -41,7 +42,7 @@ namespace WorkflowCore.Persistence.EntityFramework.Services
         {
             using (var db = ConstructDbContext())
             {
-                workflow.Id = Guid.NewGuid().ToString();
+                workflow.Id = NewId.NextGuid().ToString();
                 var persistable = workflow.ToPersistable();
                 var result = db.Set<PersistedWorkflow>().Add(persistable);
                 await db.SaveChangesAsync(cancellationToken);
@@ -185,7 +186,7 @@ namespace WorkflowCore.Persistence.EntityFramework.Services
 
                 foreach (var subscription in subscriptions)
                 {
-                    subscription.Id = Guid.NewGuid().ToString();
+                    subscription.Id = NewId.NextGuid().ToString();
                     var subscriptionPersistable = subscription.ToPersistable();
                     db.Set<PersistedSubscription>().Add(subscriptionPersistable);
                 }
@@ -240,7 +241,7 @@ namespace WorkflowCore.Persistence.EntityFramework.Services
         {
             using (var db = ConstructDbContext())
             {
-                newEvent.Id = Guid.NewGuid().ToString();
+                newEvent.Id = NewId.NextGuid().ToString();
                 var persistable = newEvent.ToPersistable();
                 var result = db.Set<PersistedEvent>().Add(persistable);
                 await db.SaveChangesAsync(cancellationToken);
