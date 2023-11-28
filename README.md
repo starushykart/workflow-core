@@ -16,6 +16,7 @@ Additional changes include:
 - `EventsPurger` to delete old events from the database
 - improved OpenTelemetry tracebility, i.e. linking steps to the parent
 - sequential GUIDs (NewId library) for entities for better database performance
+- support for .NET 8
 
 **Example:**
 ```xml
