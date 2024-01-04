@@ -1,7 +1,8 @@
 repo_name: starushykart/workflow-core
 report_id: e4aa1ae365a3d717d54aef1d6c0e97f0
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T10:58:57+00:00'
+timestamp: '2024-01-04T14:53:05+00:00'
 requested_by: starushykart
 provider: github
 branch: idempotent-workflow-start
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/starushykart/workflow-core
   detection_source: Repo Metadata
 - name: SQL
   description: It is a domain-specific language used in programming
@@ -25,7 +27,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
-  detection_source: src/providers/WorkflowCore.QueueProviders.SqlServer/SqlCommands/QueueWork.sql
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.QueueProviders.SqlServer/SqlCommands/DequeueWork.sql
+  detection_source: src/providers/WorkflowCore.QueueProviders.SqlServer/SqlCommands/DequeueWork.sql
   last_updated_by: Roberto Paterlini
   last_updated_on: 2018-02-01 11:20:44.000000000 Z
 - name: ".NET"
@@ -38,6 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/WorkflowCore.Tests.Redis/WorkflowCore.Tests.Redis.csproj
   detection_source: test/WorkflowCore.Tests.Redis/WorkflowCore.Tests.Redis.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
@@ -52,7 +56,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/11331/asp.net-core.png
-  detection_source_url: src/WorkflowCore.DSL/WorkflowCore.DSL.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/WorkflowCore.DSL/WorkflowCore.DSL.csproj
   detection_source: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   last_updated_by: Hieu Do
   last_updated_on: 2019-04-17 03:16:04.000000000 Z
@@ -64,6 +68,7 @@ tools:
   category: Data Stores
   sub_category: Message Queue
   image_url: https://img.stackshare.io/service/395/amazon-sqs.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample04/WorkflowCore.Sample04.csproj
   detection_source: src/samples/WorkflowCore.Sample04/WorkflowCore.Sample04.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-02-28 20:59:25.000000000 Z
@@ -77,6 +82,7 @@ tools:
   category: Data Stores
   sub_category: Object Relational Mapper (ORM)
   image_url: https://img.stackshare.io/service/3251/no-img-open-source.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   detection_source: src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
@@ -89,6 +95,7 @@ tools:
   category: Data Stores
   sub_category: Object Relational Mapper (ORM)
   image_url: https://img.stackshare.io/service/10254/no-img-open-source.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   detection_source: src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
@@ -100,6 +107,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1027/sql_server.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   detection_source: src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
@@ -111,6 +119,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1030/leaf-360x360.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/WorkflowCore.Tests.MongoDB/WorkflowCore.Tests.MongoDB.csproj
   detection_source: test/WorkflowCore.Tests.MongoDB/WorkflowCore.Tests.MongoDB.csproj
   last_updated_by: glucaci
   last_updated_on: 2022-11-22 14:01:48.000000000 Z
@@ -122,6 +131,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.PostgreSQL/WorkflowCore.Persistence.PostgreSQL.csproj
   detection_source: src/providers/WorkflowCore.Persistence.PostgreSQL/WorkflowCore.Persistence.PostgreSQL.csproj
   last_updated_by: Sergii Kram
   last_updated_on: 2023-06-18 11:29:01.000000000 Z
@@ -134,6 +144,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1071/sqlite.jpg
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.Sqlite/WorkflowCore.Persistence.Sqlite.csproj
   detection_source: src/providers/WorkflowCore.Persistence.Sqlite/WorkflowCore.Persistence.Sqlite.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-02-28 20:59:25.000000000 Z
@@ -146,6 +157,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/starushykart/workflow-core
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -155,6 +167,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/starushykart/workflow-core
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -164,7 +177,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
-  detection_source: ".github/workflows/nuget.yml"
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/.github/workflows/codeql-analysis.yml
+  detection_source: ".github/workflows/codeql-analysis.yml"
   last_updated_by: Sergii Kram
   last_updated_on: 2023-06-18 11:29:01.000000000 Z
 - name: NUnit
@@ -175,7 +189,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2371/jZ6MYx5Y_400x400.png
-  detection_source: test/WorkflowCore.TestAssets/WorkflowCore.TestAssets.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
+  detection_source: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-12-18 02:57:04.000000000 Z
 - name: NuGet
@@ -186,6 +201,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/WorkflowCore.Tests.Redis/WorkflowCore.Tests.Redis.csproj
   detection_source: test/WorkflowCore.Tests.Redis/WorkflowCore.Tests.Redis.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2019-01-27 15:28:46.000000000 Z
@@ -198,6 +214,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/WorkflowCore.sln
   detection_source: WorkflowCore.sln
   last_updated_by: Daniel Gerlag
   last_updated_on: 2019-12-21 22:06:51.000000000 Z
@@ -210,7 +227,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/3077/ca5a327feb49ddfe1f4b11548907e5a1_400x400.png
-  detection_source_url: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   detection_source: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-12-18 02:57:04.000000000 Z
@@ -222,6 +239,7 @@ tools:
   category: Application Utilities
   sub_category: Search as a Service
   image_url: https://img.stackshare.io/service/841/Image_2019-05-20_at_4.58.04_PM.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WebApiSample/docker-compose.yml
   detection_source: src/samples/WebApiSample/docker-compose.yml
   last_updated_by: Daniel Gerlag
   last_updated_on: 2019-01-23 03:48:32.000000000 Z
@@ -232,6 +250,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/3519/3wgIDj3j_normal.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WebApiSample/docker-compose.yml
   detection_source: src/samples/WebApiSample/docker-compose.yml
   last_updated_by: Daniel Gerlag
   last_updated_on: 2019-01-23 03:48:32.000000000 Z
@@ -246,7 +265,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13230/default_d2db5a200c4fe2d08cbdb2174cc230708973870b.png
-  detection_source_url: test/WorkflowCore.Tests.DynamoDB/WorkflowCore.Tests.DynamoDB.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/WorkflowCore.Tests.DynamoDB/WorkflowCore.Tests.DynamoDB.csproj
   detection_source: test/WorkflowCore.Tests.DynamoDB/WorkflowCore.Tests.DynamoDB.csproj
   last_updated_by: Luis Fernando Bertucci
   last_updated_on: 2022-03-15 19:39:34.000000000 Z
@@ -260,7 +279,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13304/default_a905ee276a536c55784ed56585a51a44d19b6d5b.png
-  detection_source_url: src/samples/WorkflowCore.Sample04/WorkflowCore.Sample04.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample04/WorkflowCore.Sample04.csproj
   detection_source: src/samples/WorkflowCore.Sample04/WorkflowCore.Sample04.csproj
   last_updated_by: Luis Fernando Bertucci
   last_updated_on: 2022-03-15 19:39:34.000000000 Z
@@ -273,7 +292,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13019/default_2e1baa8748e6f549b126bd1ce8d11fcaa67ba4bb.png
-  detection_source_url: test/WorkflowCore.IntegrationTests/WorkflowCore.IntegrationTests.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/WorkflowCore.IntegrationTests/WorkflowCore.IntegrationTests.csproj
   detection_source: test/WorkflowCore.IntegrationTests/WorkflowCore.IntegrationTests.csproj
   last_updated_by: glucaci
   last_updated_on: 2022-03-28 08:37:21.000000000 Z
@@ -288,7 +307,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/15063/default_49fa106e5e33c2d94f9ef3671c796bc908874773.png
-  detection_source_url: test/Docker.Testify/Docker.Testify.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/Docker.Testify/Docker.Testify.csproj
   detection_source: test/Docker.Testify/Docker.Testify.csproj
   last_updated_by: Sergii Kram
   last_updated_on: 2023-06-18 11:29:01.000000000 Z
@@ -303,7 +322,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13059/default_ed36ff3c005af695725e05bb15ea5b1f03de31f3.png
-  detection_source_url: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   detection_source: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
@@ -315,6 +334,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13005/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   detection_source: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   last_updated_by: dependabot[bot]
   last_updated_on: 2022-12-07 22:11:10.000000000 Z
@@ -328,7 +348,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13164/default_8ec8443385d582f19f93b79f0dcf69f422e58967.png
-  detection_source_url: src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
   detection_source: src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2019-12-15 01:01:46.000000000 Z
@@ -341,7 +361,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13351/default_97f005023342604c2e0668a9597b9eb6971b1d06.png
-  detection_source_url: src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
   detection_source: src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2019-12-15 01:01:46.000000000 Z
@@ -354,7 +374,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13098/default_baa6c1c3e725b18a803052f0d13efd0ca49e5d50.png
-  detection_source_url: src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
   detection_source: src/samples/WorkflowCore.Sample07/WorkflowCore.Sample07.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2019-12-15 01:01:46.000000000 Z
@@ -369,7 +389,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12852/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
   detection_source: src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
   last_updated_by: Sergii Kram
   last_updated_on: 2023-06-18 11:29:01.000000000 Z
@@ -382,6 +402,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12914/default_cd4457378b2b3dee674f43707df49edfbc5c04e5.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
   detection_source: src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
   last_updated_by: Sergii Kram
   last_updated_on: 2023-06-18 11:29:01.000000000 Z
@@ -394,6 +415,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12891/default_4e8402857d2ce7356903ee7422d9b4a0f23cc137.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   detection_source: src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
@@ -406,6 +428,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13077/default_0af6f5844ebd9062a9a4895d909753dc8447f2f3.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.Sqlite/WorkflowCore.Persistence.Sqlite.csproj
   detection_source: src/providers/WorkflowCore.Persistence.Sqlite/WorkflowCore.Persistence.Sqlite.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
@@ -420,8 +443,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13138/default_a057bdad489be3cb053d372a68695da4ac94962d.png
-  detection_source_url: src/providers/WorkflowCore.Persistence.MySQL/WorkflowCore.Persistence.MySQL.csproj
-  detection_source: src/providers/WorkflowCore.Persistence.SqlServer/WorkflowCore.Persistence.SqlServer.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.MySQL/WorkflowCore.Persistence.MySQL.csproj
+  detection_source: src/providers/WorkflowCore.Persistence.MySQL/WorkflowCore.Persistence.MySQL.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
 - name: Microsoft.Extensions.DependencyInjection
@@ -434,8 +457,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12846/default_0f5233770e71818507f2339042e7e61bef904e70.png
-  detection_source_url: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
-  detection_source: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
+  detection_source: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
 - name: Microsoft.Extensions.DependencyInjection.Abstractions
@@ -448,7 +471,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12848/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   detection_source: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
@@ -462,8 +485,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12854/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
-  detection_source: src/samples/WorkflowCore.Sample19/WorkflowCore.Sample19.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
+  detection_source: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
 - name: Microsoft.Extensions.Logging.Abstractions
@@ -476,7 +499,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12853/default_3ee9e3bfd65cbae9db28ab78b712a58bcd81af27.png
-  detection_source_url: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   detection_source: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
@@ -490,8 +513,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12943/default_e7f4dfb8f4634d3de09f6ace4c8d9767d3189c61.png
-  detection_source_url: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
-  detection_source: src/samples/WorkflowCore.Sample19/WorkflowCore.Sample19.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
+  detection_source: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
 - name: Microsoft.Extensions.Logging.Debug
@@ -504,8 +527,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12995/default_c33fee4544dbdcb376300222dc5e214ee63f7ce9.png
-  detection_source_url: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
-  detection_source: src/samples/WorkflowCore.Sample19/WorkflowCore.Sample19.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
+  detection_source: src/samples/WorkflowCore.Sample01/WorkflowCore.Sample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2020-12-19 16:47:13.000000000 Z
 - name: Microsoft.VisualStudio.Web.CodeGeneration.Design
@@ -518,7 +541,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13477/default_eb78542773998d1500f13778aa04738ef49376bd.png
-  detection_source_url: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   detection_source: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   last_updated_by: dependabot[bot]
   last_updated_on: 2022-12-07 22:11:10.000000000 Z
@@ -531,7 +554,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12892/default_f3b66025ae87cade251c16c8d9e166b0f1df9597.png
-  detection_source_url: test/WorkflowCore.Tests.MongoDB/WorkflowCore.Tests.MongoDB.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/WorkflowCore.Tests.MongoDB/WorkflowCore.Tests.MongoDB.csproj
   detection_source: test/WorkflowCore.Tests.MongoDB/WorkflowCore.Tests.MongoDB.csproj
   last_updated_by: glucaci
   last_updated_on: 2022-11-22 14:01:48.000000000 Z
@@ -553,7 +576,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13216/default_e23dabba1be2c69fbf5fc50bdc46cbffbe6ca2cb.png
-  detection_source_url: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   detection_source: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   last_updated_by: glucaci
   last_updated_on: 2022-03-28 08:37:21.000000000 Z
@@ -567,8 +590,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/nuget/image.png
-  detection_source_url: src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
-  detection_source: test/WorkflowCore.TestAssets/WorkflowCore.TestAssets.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
+  detection_source: src/providers/WorkflowCore.Persistence.EntityFramework/WorkflowCore.Persistence.EntityFramework.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
 - name: Npgsql
@@ -580,6 +603,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12954/default_971bb108ce002c2032e407a9046135e1542c46c7.png
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.PostgreSQL/WorkflowCore.Persistence.PostgreSQL.csproj
   detection_source: src/providers/WorkflowCore.Persistence.PostgreSQL/WorkflowCore.Persistence.PostgreSQL.csproj
   last_updated_by: Sergii Kram
   last_updated_on: 2023-06-18 11:29:01.000000000 Z
@@ -594,7 +618,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12935/default_bd8397841d0aa5de035298a9130ee2dc9d9b0ece.png
-  detection_source_url: src/samples/WorkflowCore.Sample19/WorkflowCore.Sample19.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.Sample19/WorkflowCore.Sample19.csproj
   detection_source: src/samples/WorkflowCore.Sample19/WorkflowCore.Sample19.csproj
   last_updated_by: DanilF
   last_updated_on: 2020-10-19 20:18:20.000000000 Z
@@ -608,7 +632,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13125/default_a057bdad489be3cb053d372a68695da4ac94962d.png
-  detection_source_url: src/providers/WorkflowCore.Persistence.MySQL/WorkflowCore.Persistence.MySQL.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/providers/WorkflowCore.Persistence.MySQL/WorkflowCore.Persistence.MySQL.csproj
   detection_source: src/providers/WorkflowCore.Persistence.MySQL/WorkflowCore.Persistence.MySQL.csproj
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
@@ -622,7 +646,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12896/default_3ee9e3bfd65cbae9db28ab78b712a58bcd81af27.png
-  detection_source_url: test/WorkflowCore.Tests.Redis/WorkflowCore.Tests.Redis.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/WorkflowCore.Tests.Redis/WorkflowCore.Tests.Redis.csproj
   detection_source: test/WorkflowCore.Tests.Redis/WorkflowCore.Tests.Redis.csproj
   last_updated_by: glucaci
   last_updated_on: 2022-11-22 14:21:07.000000000 Z
@@ -636,7 +660,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12981/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   detection_source: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   last_updated_by: Hieu Do
   last_updated_on: 2019-04-17 03:16:04.000000000 Z
@@ -650,7 +674,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13003/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: test/Docker.Testify/Docker.Testify.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/Docker.Testify/Docker.Testify.csproj
   detection_source: test/Docker.Testify/Docker.Testify.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-07-06 02:18:42.000000000 Z
@@ -664,7 +688,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13278/default_6134e5c981cbd06883a0ffc7dceb761ee17cfca4.png
-  detection_source_url: test/Docker.Testify/Docker.Testify.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/Docker.Testify/Docker.Testify.csproj
   detection_source: test/Docker.Testify/Docker.Testify.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-07-06 02:18:42.000000000 Z
@@ -678,7 +702,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12912/default_4e8402857d2ce7356903ee7422d9b4a0f23cc137.png
-  detection_source_url: test/Docker.Testify/Docker.Testify.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/test/Docker.Testify/Docker.Testify.csproj
   detection_source: test/Docker.Testify/Docker.Testify.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-07-06 02:18:42.000000000 Z
@@ -692,7 +716,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/14317/default_23fb0d89093c35204157db4633c2a16b5403b10a.png
-  detection_source_url: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   detection_source: src/samples/WebApiSample/WebApiSample/WebApiSample.csproj
   last_updated_by: Hieu Do
   last_updated_on: 2019-04-17 03:16:04.000000000 Z
@@ -706,7 +730,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13260/default_d2db5a200c4fe2d08cbdb2174cc230708973870b.png
-  detection_source_url: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
+  detection_source_url: https://github.com/starushykart/workflow-core/blob/idempotent-workflow-start/src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   detection_source: src/samples/WorkflowCore.TestSample01/WorkflowCore.TestSample01.csproj
   last_updated_by: Daniel Gerlag
   last_updated_on: 2017-12-18 02:57:04.000000000 Z
