@@ -13,14 +13,14 @@ Also, in scenarios where you create a workflow to process document, user, extern
 you can derive 'reference' from these entities and later find the matching workflow if you failed to persist the returned workflow id the first time.
 
 Additional changes include:
-- `EventsPurger` to delete old events from the database
-- improved OpenTelemetry tracebility, i.e. linking steps to the parent
+- `EventsPurger` to delete old events from the database and batching for `WorkflowPurger`
+- improved OpenTelemetry tracebility, i.e. linking steps to the parent workflow
 - sequential GUIDs (NewId library) for entities for better database performance
 - support for .NET 8
 
 **Example:**
 ```xml
-<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL" Version="3.9.0.4" />
+<PackageReference Include="SergiiKram.WorkflowCore.Persistence.PostgreSQL" Version="3.9.0.6" />
 ```
 
 ```cs
@@ -48,6 +48,7 @@ public async Task<IActionResult> HelloWorld(string reference)
 
 Only PostgreSQL is supported for now.
 
+# Original README
 # Workflow Core
 
 Workflow Core is a light weight embeddable workflow engine targeting .NET Standard.  Think: long running processes with multiple tasks that need to track state.  It supports pluggable persistence and concurrency providers to allow for multi-node clusters.
