@@ -2,7 +2,7 @@ repo_name: starushykart/workflow-core
 report_id: e4aa1ae365a3d717d54aef1d6c0e97f0
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:27:55+00:00'
+timestamp: '2024-02-29T18:00:38+00:00'
 requested_by: starushykart
 provider: github
 branch: idempotent-workflow-start
@@ -87,7 +87,7 @@ tools:
   last_updated_by: Ben Edwards
   last_updated_on: 2023-05-17 02:42:16.000000000 Z
 - name: Entity Framework Core
-  description: 'Lightweight and cross-platform version of the popular Entity Framework '
+  description: Lightweight and cross-platform version of the popular Entity Framework
   website_url: https://docs.microsoft.com/en-us/ef/core/
   license: MIT
   open_source: true
